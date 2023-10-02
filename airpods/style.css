@@ -174,8 +174,36 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .composition__inner-text p {
     max-width: 230px;
+}
+
+.battery {
+    padding: 80px 0 100px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.battery__text {
+    max-width: 825px;
+    margin: 0 auto 40px;
+}
+
+.energy__title {
+    padding-top: 160px;
+    margin-bottom: 40px;
+}
+
+.battery__number {
+    margin-bottom: 40px;
+    font-size: 210px;
+    font-weight: 700;
+}
+
+.energy__text{
+    margin: 0 auto;
+    max-width: 400px;
 }
