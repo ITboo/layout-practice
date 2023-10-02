@@ -203,7 +203,63 @@ ul {
     font-weight: 700;
 }
 
-.energy__text{
+.energy__text {
     margin: 0 auto;
     max-width: 400px;
+}
+
+.audio {
+    background-image: url(../airpods/images/layout.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.audio::after{
+    content: '';
+    position: absolute;
+    background-image: url(../airpods/images/audio-waves.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 150vh;
+    bottom: -250px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.audio__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    min-height: 200vh;
+}
+
+.audio__box {
+    padding-bottom: 30vh;
+    color: white;
+}
+
+.audio__text {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.audio__btn {
+    margin-top: 25px;
+    text-transform: uppercase;
+    padding: 15px 58px;
+    border-radius: 30px;
+    font-weight: 700;
+    background: #FFF;
+}
+
+.footer {
+    padding: 250px 0 40px;
+    background-color: #000;
 }
