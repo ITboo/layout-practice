@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Diamond Animation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      svg {
+        width: 80px;
+      }
+      #diamond path:nth-child(1) {
+        stroke-dasharray: 187px;
+        stroke-dashoffset: 187px;
+        animation: anim-line 2s ease forwards 0.3s;
+      }
+
+      #diamond path:nth-child(2) {
+        stroke-dasharray: 62;
+        stroke-dashoffset: 62;
+        animation: anim-line 2s ease forwards 0.6s;
+      }
+      #diamond path:nth-child(3) {
+        stroke-dasharray: 63;
+        stroke-dashoffset: 63;
+        animation: anim-line 2s ease forwards 0.9s;
+      }
+      #diamond path:nth-child(4) {
+        stroke-dasharray: 63;
+        stroke-dashoffset: 63;
+        animation: anim-line 2s ease forwards 1.2s;
+      }
+      @keyframes anim-line {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      id="diamond"
+      width="50px"
+      height="50px"
+      viewBox="0 -1.5 66 66"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+      fill="#000000"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <title>Diamond</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g
+          id="Page-1"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+          sketch:type="MSPage"
+        >
+          <g
+            id="Diamond"
+            sketch:type="MSLayerGroup"
+            transform="translate(2.000000, 1.000000)"
+            stroke="#6B6C6E"
+            stroke-width="2"
+          >
+            <path
+              d="M62,18 L31,60 L0,18 L10.7,0 L51.3,0 L62,18 Z"
+              id="Shape"
+              sketch:type="MSShapeGroup"
+            ></path>
+            <path d="M0,18 L62,18" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path
+              d="M21.5,0 L15.5,18 L31,58.8"
+              id="Shape"
+              sketch:type="MSShapeGroup"
+            ></path>
+            <path
+              d="M40.5,0 L46.5,18 L31,58.8"
+              id="Shape"
+              sketch:type="MSShapeGroup"
+            ></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <script src="./index.js"></script>
+  </body>
+</html>
